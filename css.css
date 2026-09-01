@@ -1,0 +1,126 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+}
+.main_box
+{
+    background: url("/photo.jpg") center / cover no-repeat;
+    height: 100vh;
+}
+.btn_one
+{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+}
+.sidebar_menu
+{
+    position: fixed;
+    left: -500px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgb(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgb(255, 255, 255,0.5 );
+    transition: all 0.2s linear;
+}
+.sidebar_menu .logo
+{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 0 4px rgb(255, 255, 255,0.5 );
+}
+.sidebar_menu .logo a 
+{
+    position: absolute;
+    left: 45px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+.sidebar_menu .btn_two 
+{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    left: 275px;
+    opacity: 0.5;
+    
+}
+.sidebar_menu .menu
+{
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+.sidebar_menu .menu li
+{
+    margin-top: 6px;
+    padding: 10px 20px;
+}
+.sidebar_menu .menu i,a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.sidebar_menu .menu i
+{
+    padding-right: 8px;
+}
+.sidebar_menu .social_media
+{
+  position: absolute;
+  left: 25%;
+  bottom: 50px;
+}
+.sidebar_menu .social_media i
+{
+  color: white;
+  opacity: 0.5;
+  padding: 10px;
+  border-radius: 10px;
+}
+#check
+{
+    display: none;
+}
+
+.sidebar_menu .menu li:hover
+{
+  border-radius: 25px;
+  box-shadow: 0 0 4px rgb(255, 255, 255,0.5 );
+  transform: scale(0.8);
+}
+.sidebar_menu .social_media i:hover
+{
+    box-shadow: 0 0 4px rgb(255, 255, 255,0.5 );
+    opacity: 1;
+    transform: scale(1.5);
+}
+.btn_one:hover
+{
+    font-size: 50px;
+}
+#check:checked ~ .sidebar_menu
+{
+ left: 0;
+}
+.sidebar_menu .btn_two li a
+{
+    cursor: pointer;
+}
+.btn_two i
+{
+    cursor: pointer;
+}
+#check:checked ~ .btn_one i
+{
+    opacity: 0;
+}
